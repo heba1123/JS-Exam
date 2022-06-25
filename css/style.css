@@ -1,0 +1,106 @@
+body {
+    background-color: black;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+nav{
+    left: -300px;
+    width: 300px;
+    z-index: 9999;
+    
+
+}
+
+
+
+.navHandle {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 100vh;
+    width: 50px;
+    background-color: aliceblue;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    z-index: 99999;
+}
+
+.navHandle i:hover{
+    cursor: pointer;
+}
+
+.navContent{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navContent ul li a {
+    color: white;
+    transition: 0.3s all;
+}
+
+.navContent ul li a:hover {
+    color: brown;
+}
+
+.navSocial i{
+    color: white;
+    transition: 0.3s all;
+
+}
+
+.navSocial i:hover{
+    color: brown;
+    cursor: pointer;
+}
+
+.form-control {
+    border: none;
+    background-color: black;
+    border-bottom: 1px solid rgb(194, 188, 188);
+    color: aliceblue;
+}
+
+.form-control:focus {
+    background-color: black;
+}
+
+.movie {
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.movieContent img {
+    border-radius: 7px;
+
+}
+
+.layer {
+    border-radius: 7px;
+    position: absolute;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    right: 0;
+    transition: all 1s;
+}
+
+.layer h2 {
+    margin-top: 20px;
+}
+
+.movie:hover .layer {
+    top: 0;
+
+}
